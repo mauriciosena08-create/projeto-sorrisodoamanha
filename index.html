@@ -19,12 +19,39 @@
             <a href="#inicio">Inicio</a>
             <a href="#programas">Programas</a>
             <a href="#sobre">Sobre</a>
-            <a href="" id="entrar">Entrar</a>
+            <a href="#" id="entrar" onclick="abrirModal()">Entrar</a>
             <a href="" id="doar">Doe agora</a>
         </div>
     </div>
  </header>
  <main>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="fecharModal()">✕</button>
+    
+            <div class="modal-logo">
+                <i class="ti ti-heart"></i>
+                <span>Sorrisos do <span class="grn">Amanhã</span></span>
+            </div>
+    
+            <h2>Bem-vindo de volta</h2>
+            <p class="subtitulo">Acesse a área administrativa</p>
+    
+            <form onsubmit="validarLogin(event)">
+                <div class="form-group">
+                    <label for="user">Usuário</label>
+                    <input type="text" id="user" placeholder="Digite seu usuário">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Senha</label>
+                    <input type="password" id="pass" placeholder="••••••••">
+                </div>
+                <button type="submit"><i class="ti ti-login"></i> Entrar</button>
+            </form>
+    
+            <p class="hint">Use <strong>admin</strong> / <strong>1234</strong> para testar</p>
+        </div>
+    </div>
     <section id="inicio">
         <div class="hero">
             <div id="herodregad">
@@ -133,10 +160,38 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class= "container-tabela">
+            <h3 id = "fale">FALE CONOSCO</h3>
+            <h1 id = "tabela">Tabela de contatos</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th>nome</th>
+                    <th>email</th>
+                    <th>telefone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>mauricio</td>
+                    <td>mauriciodesena333@gmail.com</td>
+                    <td>85 9 89999999</td>
+                </tr>
+                <tr>
+                    <td>jose lucas</td>
+                    <td>joselucas@gmail.com</td>
+                    <td>85 9 99999999</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
     
  </main>
  <footer>
     <h1>&copy;2024 Sorrisos do Amanhã · Todos os direitos reservados</h1>
  </footer>
+ <script src="script.js"></script>
 </body>
 </html>
