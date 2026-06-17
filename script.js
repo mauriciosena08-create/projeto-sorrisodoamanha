@@ -17,3 +17,11 @@ function validarLogin(event) {
         window.location.href = "erro.html";
     }
 }
+function qrcode(){
+    const qr = document.getElementById("container"); 
+    const novoQrcode = document.createElement("img");
+    novoQrcode.src = "DnjprL.png"
+    novoQrcode.style.width = '100px';
+    novoQrcode.style.maxWidth = '400px';
+    container.appendChild(novoQrcode);
+}
