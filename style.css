@@ -422,21 +422,59 @@ background-color: #2a2a2a;
     color: #4caf7d;
 }
 .container-tabela{
-    background-color: #2a2a2a;
-    border-radius: 15px;
-    padding: 20px;
-    width: fit-content;
-    border: 1px solid #444;
+    background-color: #383838;
+    border: 1px solid #4a4a4a;
+    border-radius: 20px;
+    padding: 0px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width:700px ;
+    margin: 0 auto;
 }
 table{
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 thead th{
-    background-color: #4caf7d;
-    color: #a0ff80;
+    background-color: #056319;
+    color: rgb(8, 250, 8);
     text-align: left;
     padding: 12px;
 }
-thead th : first-child{ border-radius:8px 0 0 8px;}
-thead th : last-child{ border-radius:0 8px 8px 0; }
+thead tr{
+    background-color: #1b4d2e;
+}
+th, td{
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+#tab{
+    background-color: #111111;
+    font-family:'Inter', sans-serif; ;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+    color: white;
+}
+#fale{
+    text-align: center;
+    color: #4caf7d;
+}
+#tabela{
+    text-align: center;
+}
+.col-tel {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.col-nome {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+tbody tr td{
+    border-bottom: 1px solid #111111;
+}
